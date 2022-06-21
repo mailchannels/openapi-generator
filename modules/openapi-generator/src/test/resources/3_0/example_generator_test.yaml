@@ -61,6 +61,77 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ExampleSchema'
+  /generate_from_response_schema_with_array_of_model_with_min_items:
+    get:
+      operationId: generateFromResponseSchemaWithArrayOfModelMinItems
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                string_array:
+                  type: array
+                  minItems: 2
+                  items:
+                    $ref: '#/components/schemas/ExampleSchema'
+      responses:
+        '200':
+          description: successful operation
+  /generate_from_response_schema_with_array_of_model_with_max_items:
+    get:
+      operationId: generateFromResponseSchemaWithArrayOfModelMinItems
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                string_array:
+                  type: array
+                  maxItems: 1000
+                  items:
+                    $ref: '#/components/schemas/ExampleSchema'
+      responses:
+        '200':
+          description: successful operation
+  /generate_from_response_schema_with_array_of_model_no_min_or_max:
+    get:
+      operationId: generateFromResponseSchemaWithArrayOfModelMinItems
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                string_array:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/ExampleSchema'
+      responses:
+        '200':
+          description: successful operation
+  /generate_from_response_schema_with_array_of_model_min_is_zero:
+    get:
+      operationId: generateFromResponseSchemaWithArrayOfModelMinItems
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                string_array:
+                  type: array
+                  minItems: 0
+                  items:
+                    $ref: '#/components/schemas/ExampleSchema'
+      responses:
+        '200':
+          description: successful operation
 components:
   schemas:
     StringSchema:

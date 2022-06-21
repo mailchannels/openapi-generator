@@ -151,4 +151,132 @@ public class ExampleGeneratorTest {
         assertEquals(String.format(Locale.ROOT, "{%n  \"example_schema_property\" : \"example schema property value\"%n}"), examples.get(0).get("example"));
         assertEquals("200", examples.get(0).get("statusCode"));
     }
+
+    @Test
+    public void generateFromResponseSchemaWithArrayMinItems() {
+        OpenAPI openAPI = TestUtils.parseFlattenSpec("src/test/resources/3_0/example_generator_test.yaml");
+
+        new InlineModelResolver().flatten(openAPI);
+
+        ExampleGenerator exampleGenerator = new ExampleGenerator(openAPI.getComponents().getSchemas(), openAPI);
+        Set<String> mediaTypeKeys = new TreeSet<>();
+        mediaTypeKeys.add("application/json");
+
+        List<Map<String, String>> examples = exampleGenerator.generateFromResponseSchema(
+                "200",
+                openAPI
+                        .getPaths()
+                        .get("/generate_from_response_schema_with_array_of_model_with_min_items")
+                        .getGet()
+                        .getRequestBody()
+                        .getContent()
+                        .get("application/json")
+                        .getSchema(),
+                mediaTypeKeys
+        );
+        assertEquals(1, examples.size());
+        assertEquals("application/json", examples.get(0).get("contentType"));
+
+        String expected = String.format(Locale.ROOT, "{%n  \"string_array\" : [ {\n    \"example_schema_property\" :" +
+                " \"example schema property value\"\n  }, {\n    \"example_schema_property\" : \"example schema property value\"\n  } ]%n}");
+        assertEquals(expected, examples.get(0).get("example"));
+
+        assertEquals("200", examples.get(0).get("statusCode"));
+    }
+
+    @Test
+    public void generateFromResponseSchemaWithArrayMaxItems1000() {
+        OpenAPI openAPI = TestUtils.parseFlattenSpec("src/test/resources/3_0/example_generator_test.yaml");
+
+        new InlineModelResolver().flatten(openAPI);
+
+        ExampleGenerator exampleGenerator = new ExampleGenerator(openAPI.getComponents().getSchemas(), openAPI);
+        Set<String> mediaTypeKeys = new TreeSet<>();
+        mediaTypeKeys.add("application/json");
+
+        List<Map<String, String>> examples = exampleGenerator.generateFromResponseSchema(
+                "200",
+                openAPI
+                        .getPaths()
+                        .get("/generate_from_response_schema_with_array_of_model_with_max_items")
+                        .getGet()
+                        .getRequestBody()
+                        .getContent()
+                        .get("application/json")
+                        .getSchema(),
+                mediaTypeKeys
+        );
+        assertEquals(1, examples.size());
+        assertEquals("application/json", examples.get(0).get("contentType"));
+
+        String expected = String.format(Locale.ROOT, "{%n  \"string_array\" : [ {\n    \"example_schema_property\" :" +
+                " \"example schema property value\"\n  } ]%n}");
+        assertEquals(expected, examples.get(0).get("example"));
+
+        assertEquals("200", examples.get(0).get("statusCode"));
+    }
+
+    @Test
+    public void generateFromResponseSchemaWithArrayNoMinOrMaxSpecified() {
+        OpenAPI openAPI = TestUtils.parseFlattenSpec("src/test/resources/3_0/example_generator_test.yaml");
+
+        new InlineModelResolver().flatten(openAPI);
+
+        ExampleGenerator exampleGenerator = new ExampleGenerator(openAPI.getComponents().getSchemas(), openAPI);
+        Set<String> mediaTypeKeys = new TreeSet<>();
+        mediaTypeKeys.add("application/json");
+
+        List<Map<String, String>> examples = exampleGenerator.generateFromResponseSchema(
+                "200",
+                openAPI
+                        .getPaths()
+                        .get("/generate_from_response_schema_with_array_of_model_no_min_or_max")
+                        .getGet()
+                        .getRequestBody()
+                        .getContent()
+                        .get("application/json")
+                        .getSchema(),
+                mediaTypeKeys
+        );
+        assertEquals(1, examples.size());
+        assertEquals("application/json", examples.get(0).get("contentType"));
+
+        String expected = String.format(Locale.ROOT, "{%n  \"string_array\" : [ {\n    \"example_schema_property\" :" +
+                " \"example schema property value\"\n  } ]%n}");
+        assertEquals(expected, examples.get(0).get("example"));
+
+        assertEquals("200", examples.get(0).get("statusCode"));
+    }
+
+    @Test
+    public void generateFromResponseSchemaWithArrayMinIsZero() {
+        OpenAPI openAPI = TestUtils.parseFlattenSpec("src/test/resources/3_0/example_generator_test.yaml");
+
+        new InlineModelResolver().flatten(openAPI);
+
+        ExampleGenerator exampleGenerator = new ExampleGenerator(openAPI.getComponents().getSchemas(), openAPI);
+        Set<String> mediaTypeKeys = new TreeSet<>();
+        mediaTypeKeys.add("application/json");
+
+        List<Map<String, String>> examples = exampleGenerator.generateFromResponseSchema(
+                "200",
+                openAPI
+                        .getPaths()
+                        .get("/generate_from_response_schema_with_array_of_model_min_is_zero")
+                        .getGet()
+                        .getRequestBody()
+                        .getContent()
+                        .get("application/json")
+                        .getSchema(),
+                mediaTypeKeys
+        );
+        assertEquals(1, examples.size());
+        assertEquals("application/json", examples.get(0).get("contentType"));
+
+        String expected = String.format(Locale.ROOT, "{%n  \"string_array\" : [ {\n    \"example_schema_property\" :" +
+                " \"example schema property value\"\n  } ]%n}");
+        assertEquals(expected, examples.get(0).get("example"));
+
+        assertEquals("200", examples.get(0).get("statusCode"));
+    }
 }

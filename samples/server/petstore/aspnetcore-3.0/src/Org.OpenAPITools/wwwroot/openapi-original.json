@@ -964,7 +964,7 @@
       "Pet" : {
         "description" : "A pet for sale in the pet store",
         "example" : {
-          "photoUrls" : [ "photoUrls", "photoUrls" ],
+          "photoUrls" : [ "photoUrls" ],
           "name" : "doggie",
           "id" : 0,
           "category" : {
@@ -972,9 +972,6 @@
             "id" : 6
           },
           "tags" : [ {
-            "name" : "name",
-            "id" : 1
-          }, {
             "name" : "name",
             "id" : 1
           } ],

@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>openapi3-extensions-x-auth-id-alias-jersey2-java8</artifactId>
   <version>1.0.0</version>
   <scope>compile</scope>
@@ -114,7 +114,7 @@ public class UsageApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
         defaultClient.setBasePath("http://petstore.swagger.io:80/v2");
-        
+
         // Configure API key authorization: api_key
         ApiKeyAuth api_key = (ApiKeyAuth) defaultClient.getAuthentication("api_key");
         api_key.setApiKey("YOUR API KEY");

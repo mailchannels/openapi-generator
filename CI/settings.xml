@@ -6,14 +6,9 @@
     <pluginGroups/>
     <servers>
         <server>
-            <id>sonatype-nexus-snapshots</id>
-            <username>${env.SONATYPE_USERNAME}</username>
-            <password>${env.SONATYPE_PASSWORD}</password>
-        </server>
-        <server>
-            <id>ossrh</id>
-            <username>${env.SONATYPE_USERNAME}</username>
-            <password>${env.SONATYPE_PASSWORD}</password>
+            <id>mc</id>
+            <username>${env.DEPLOYER_USER}</username>
+            <password>${env.DEPLOYER_PASSWORD}</password>
         </server>
     </servers>
     <mirrors/>

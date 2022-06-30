@@ -37,7 +37,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>petstore-okhttp-gson-group-parameter</artifactId>
   <version>1.0.0</version>
   <scope>compile</scope>
@@ -90,7 +90,7 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://petstore.swagger.io/v2");
-    
+
     // Configure OAuth2 access token for authorization: petstore_auth
     OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
     petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
@@ -153,7 +153,7 @@ Authentication schemes defined for the API:
 - **Type**: OAuth
 - **Flow**: implicit
 - **Authorization URL**: http://petstore.swagger.io/api/oauth/dialog
-- **Scopes**: 
+- **Scopes**:
   - write:pets: modify pets in your account
   - read:pets: read your pets
 

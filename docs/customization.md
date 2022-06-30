@@ -75,7 +75,7 @@ Excluding `SupportingFiles`, each of the above options may result in multiple fi
 Note that user-defined templates will merge with built-in template definitions. If a supporting file with the sample template file path exists, it will be replaced with the user-defined template, otherwise the user-defined template will be added to the list of template files to compile. If the generator's built-in template is `model_docs.mustache` and you define `model-docs.mustache`, this will result in duplicated model docs (if `destinationFilename` differs) or undefined behavior as whichever template compiles last will overwrite the previous model docs (if `destinationFilename` matches the extension or suffix in the generator's code).
 
 ## Custom Generator (and Template)
- 
+
 <a id="creating-a-new-template"></a> If none of the built-in generators suit your needs and you need to do more than just modify the mustache templates to tweak generated code, you can create a brand new generator and its associated templates. OpenAPI Generator can help with this, using the `meta` command:
 
 ```sh
@@ -95,7 +95,7 @@ To compile your library, enter the `out/generators/my-codegen` directory, run `m
 
 **NOTE** Running your custom generator requires adding it to the classpath. This differs on [Windows](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/classpath.html) slightly from [unix](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/classpath.html).
 If you are running a Windows Subsystem for Linux or a shell such as gitbash, and have issues with the unix variant, try the Windows syntax below.
- 
+
 Now, execute the generator:
 
 ```sh
@@ -138,7 +138,7 @@ You can use this as additional dependency of the `openapi-generator-maven-plugin
 
 ```xml
 <plugin>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>openapi-generator-maven-plugin</artifactId>
   <version>${openapi-generator-version}</version>
   <executions>
@@ -155,7 +155,7 @@ You can use this as additional dependency of the `openapi-generator-maven-plugin
   </executions>
   <dependencies>
     <dependency>
-      <groupId>org.openapitools</groupId>
+      <groupId>com.mailchannels.openapitools</groupId>
       <artifactId>my-codegen-openapi-generator</artifactId>
       <version>1.0.0</version>
     </dependency>

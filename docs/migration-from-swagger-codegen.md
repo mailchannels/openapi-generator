@@ -64,7 +64,7 @@ New:
 
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator</artifactId>
 </dependency>
 ```
@@ -82,7 +82,7 @@ New:
 
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-cli</artifactId>
 </dependency>
 ```
@@ -100,7 +100,7 @@ New:
 
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-maven-plugin</artifactId>
 </dependency>
 ```
@@ -147,7 +147,7 @@ Some examples:
 | `swagger.codegen.undertow.modelpackage` | `openapi.codegen.undertow.modelpackage` |
 
 
-## Renamed Mustache Template Variables 
+## Renamed Mustache Template Variables
 
 The template variable `{{datatype}}` was renamed to `{{dataType}}` for consistency reason.
 Corresponding java code: `CodegenProperty.datatype` is renamed to `CodegenProperty.dataType`.
@@ -172,14 +172,14 @@ The metadata folder (to store the `VERSION` file for example) is now called `.op
 ## New default values for the generated code
 
 If you use a generator without specifying each parameter, you might see some differences in the generated code.
-As example the default package name used in the generated code has changed. 
+As example the default package name used in the generated code has changed.
 You need to have a look at the specific value, depending of your target language, but often `Swagger` îs replaced by `OpenAPITools` and `io.swagger` is replaced by `org.openapitools`.
 Concretely if you did not specify anything when you are generating java code, a file `org/openapitools/api/PetApi.java`  might be generated instead of `io/swagger/api/PetApi.java`.
 
 If this is a problem for you, you need to explicitly set the the parameter value in order to match with the `swagger-codgen` default value (`apiPackage` == `io.swagger` in the previous example with the java generator).
 
 
-## New fully qualified name for the classes 
+## New fully qualified name for the classes
 
 If you have extended some generators in your project, and you are looking for a specific class, replace the `io.swagger.codegen` package (old name) with `org.openapitools.codegen` package (new name).
 

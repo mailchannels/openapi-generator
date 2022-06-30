@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>petstore-native</artifactId>
   <version>1.0.0</version>
   <scope>compile</scope>
@@ -110,18 +110,18 @@ Class | Method | HTTP request | Description
 *AnotherFakeApi* | [**call123testSpecialTagsWithHttpInfo**](docs/AnotherFakeApi.md#call123testSpecialTagsWithHttpInfo) | **PATCH** /another-fake/dummy | To test special tags
 *FakeApi* | [**createXmlItem**](docs/FakeApi.md#createXmlItem) | **POST** /fake/create_xml_item | creates an XmlItem
 *FakeApi* | [**createXmlItemWithHttpInfo**](docs/FakeApi.md#createXmlItemWithHttpInfo) | **POST** /fake/create_xml_item | creates an XmlItem
-*FakeApi* | [**fakeOuterBooleanSerialize**](docs/FakeApi.md#fakeOuterBooleanSerialize) | **POST** /fake/outer/boolean | 
-*FakeApi* | [**fakeOuterBooleanSerializeWithHttpInfo**](docs/FakeApi.md#fakeOuterBooleanSerializeWithHttpInfo) | **POST** /fake/outer/boolean | 
-*FakeApi* | [**fakeOuterCompositeSerialize**](docs/FakeApi.md#fakeOuterCompositeSerialize) | **POST** /fake/outer/composite | 
-*FakeApi* | [**fakeOuterCompositeSerializeWithHttpInfo**](docs/FakeApi.md#fakeOuterCompositeSerializeWithHttpInfo) | **POST** /fake/outer/composite | 
-*FakeApi* | [**fakeOuterNumberSerialize**](docs/FakeApi.md#fakeOuterNumberSerialize) | **POST** /fake/outer/number | 
-*FakeApi* | [**fakeOuterNumberSerializeWithHttpInfo**](docs/FakeApi.md#fakeOuterNumberSerializeWithHttpInfo) | **POST** /fake/outer/number | 
-*FakeApi* | [**fakeOuterStringSerialize**](docs/FakeApi.md#fakeOuterStringSerialize) | **POST** /fake/outer/string | 
-*FakeApi* | [**fakeOuterStringSerializeWithHttpInfo**](docs/FakeApi.md#fakeOuterStringSerializeWithHttpInfo) | **POST** /fake/outer/string | 
-*FakeApi* | [**testBodyWithFileSchema**](docs/FakeApi.md#testBodyWithFileSchema) | **PUT** /fake/body-with-file-schema | 
-*FakeApi* | [**testBodyWithFileSchemaWithHttpInfo**](docs/FakeApi.md#testBodyWithFileSchemaWithHttpInfo) | **PUT** /fake/body-with-file-schema | 
-*FakeApi* | [**testBodyWithQueryParams**](docs/FakeApi.md#testBodyWithQueryParams) | **PUT** /fake/body-with-query-params | 
-*FakeApi* | [**testBodyWithQueryParamsWithHttpInfo**](docs/FakeApi.md#testBodyWithQueryParamsWithHttpInfo) | **PUT** /fake/body-with-query-params | 
+*FakeApi* | [**fakeOuterBooleanSerialize**](docs/FakeApi.md#fakeOuterBooleanSerialize) | **POST** /fake/outer/boolean |
+*FakeApi* | [**fakeOuterBooleanSerializeWithHttpInfo**](docs/FakeApi.md#fakeOuterBooleanSerializeWithHttpInfo) | **POST** /fake/outer/boolean |
+*FakeApi* | [**fakeOuterCompositeSerialize**](docs/FakeApi.md#fakeOuterCompositeSerialize) | **POST** /fake/outer/composite |
+*FakeApi* | [**fakeOuterCompositeSerializeWithHttpInfo**](docs/FakeApi.md#fakeOuterCompositeSerializeWithHttpInfo) | **POST** /fake/outer/composite |
+*FakeApi* | [**fakeOuterNumberSerialize**](docs/FakeApi.md#fakeOuterNumberSerialize) | **POST** /fake/outer/number |
+*FakeApi* | [**fakeOuterNumberSerializeWithHttpInfo**](docs/FakeApi.md#fakeOuterNumberSerializeWithHttpInfo) | **POST** /fake/outer/number |
+*FakeApi* | [**fakeOuterStringSerialize**](docs/FakeApi.md#fakeOuterStringSerialize) | **POST** /fake/outer/string |
+*FakeApi* | [**fakeOuterStringSerializeWithHttpInfo**](docs/FakeApi.md#fakeOuterStringSerializeWithHttpInfo) | **POST** /fake/outer/string |
+*FakeApi* | [**testBodyWithFileSchema**](docs/FakeApi.md#testBodyWithFileSchema) | **PUT** /fake/body-with-file-schema |
+*FakeApi* | [**testBodyWithFileSchemaWithHttpInfo**](docs/FakeApi.md#testBodyWithFileSchemaWithHttpInfo) | **PUT** /fake/body-with-file-schema |
+*FakeApi* | [**testBodyWithQueryParams**](docs/FakeApi.md#testBodyWithQueryParams) | **PUT** /fake/body-with-query-params |
+*FakeApi* | [**testBodyWithQueryParamsWithHttpInfo**](docs/FakeApi.md#testBodyWithQueryParamsWithHttpInfo) | **PUT** /fake/body-with-query-params |
 *FakeApi* | [**testClientModel**](docs/FakeApi.md#testClientModel) | **PATCH** /fake | To test \&quot;client\&quot; model
 *FakeApi* | [**testClientModelWithHttpInfo**](docs/FakeApi.md#testClientModelWithHttpInfo) | **PATCH** /fake | To test \&quot;client\&quot; model
 *FakeApi* | [**testEndpointParameters**](docs/FakeApi.md#testEndpointParameters) | **POST** /fake | Fake endpoint for testing various parameters  假端點  偽のエンドポイント  가짜 엔드 포인트
@@ -134,8 +134,8 @@ Class | Method | HTTP request | Description
 *FakeApi* | [**testInlineAdditionalPropertiesWithHttpInfo**](docs/FakeApi.md#testInlineAdditionalPropertiesWithHttpInfo) | **POST** /fake/inline-additionalProperties | test inline additionalProperties
 *FakeApi* | [**testJsonFormData**](docs/FakeApi.md#testJsonFormData) | **GET** /fake/jsonFormData | test json serialization of form data
 *FakeApi* | [**testJsonFormDataWithHttpInfo**](docs/FakeApi.md#testJsonFormDataWithHttpInfo) | **GET** /fake/jsonFormData | test json serialization of form data
-*FakeApi* | [**testQueryParameterCollectionFormat**](docs/FakeApi.md#testQueryParameterCollectionFormat) | **PUT** /fake/test-query-parameters | 
-*FakeApi* | [**testQueryParameterCollectionFormatWithHttpInfo**](docs/FakeApi.md#testQueryParameterCollectionFormatWithHttpInfo) | **PUT** /fake/test-query-parameters | 
+*FakeApi* | [**testQueryParameterCollectionFormat**](docs/FakeApi.md#testQueryParameterCollectionFormat) | **PUT** /fake/test-query-parameters |
+*FakeApi* | [**testQueryParameterCollectionFormatWithHttpInfo**](docs/FakeApi.md#testQueryParameterCollectionFormatWithHttpInfo) | **PUT** /fake/test-query-parameters |
 *FakeClassnameTags123Api* | [**testClassname**](docs/FakeClassnameTags123Api.md#testClassname) | **PATCH** /fake_classname_test | To test class name in snake case
 *FakeClassnameTags123Api* | [**testClassnameWithHttpInfo**](docs/FakeClassnameTags123Api.md#testClassnameWithHttpInfo) | **PATCH** /fake_classname_test | To test class name in snake case
 *PetApi* | [**addPet**](docs/PetApi.md#addPet) | **POST** /pet | Add a new pet to the store
@@ -262,7 +262,7 @@ Authentication schemes defined for the API:
 - **Type**: OAuth
 - **Flow**: implicit
 - **Authorization URL**: http://petstore.swagger.io/api/oauth/dialog
-- **Scopes**: 
+- **Scopes**:
   - write:pets: modify pets in your account
   - read:pets: read your pets
 

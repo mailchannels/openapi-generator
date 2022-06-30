@@ -37,7 +37,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>petstore-okhttp-gson</artifactId>
   <version>1.0</version>
   <scope>compile</scope>
@@ -118,8 +118,8 @@ All URIs are relative to *http://localhost:8082*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*PingApi* | [**getPing**](docs/PingApi.md#getPing) | **GET** /ping | 
-*PingApi* | [**postPing**](docs/PingApi.md#postPing) | **POST** /ping | 
+*PingApi* | [**getPing**](docs/PingApi.md#getPing) | **GET** /ping |
+*PingApi* | [**postPing**](docs/PingApi.md#postPing) | **POST** /ping |
 
 
 ## Documentation for Models

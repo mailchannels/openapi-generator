@@ -136,7 +136,7 @@ You can find our released artifacts on maven central:
 **Core:**
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator</artifactId>
     <version>${openapi-generator-version}</version>
 </dependency>
@@ -146,7 +146,7 @@ See the different versions of the [openapi-generator](https://search.maven.org/a
 **Cli:**
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-cli</artifactId>
     <version>${openapi-generator-version}</version>
 </dependency>
@@ -156,7 +156,7 @@ See the different versions of the [openapi-generator-cli](https://search.maven.o
 **Maven plugin:**
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-maven-plugin</artifactId>
     <version>${openapi-generator-version}</version>
 </dependency>
@@ -167,7 +167,7 @@ See the different versions of the [openapi-generator-cli](https://search.maven.o
 **Gradle plugin:**
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-gradle-plugin</artifactId>
     <version>${openapi-generator-version}</version>
 </dependency>

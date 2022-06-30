@@ -7,7 +7,7 @@
         <relativePath/><!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-project</artifactId>
     <packaging>pom</packaging>
     <name>openapi-generator-project</name>
@@ -64,13 +64,9 @@
     </issueManagement>
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>mc</id>
+            <url>https://mailchannels.jfrog.io/mailchannels/libs-snapshots-local</url>
         </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
     </distributionManagement>
     <licenses>
         <license>
@@ -300,7 +296,7 @@
                                     <message>No Snapshots Allowed!</message>
                                     <failWhenParentIsSnapshot>false</failWhenParentIsSnapshot>
                                     <excludes>
-                                        <exclude>org.openapitools:*</exclude>
+                                        <exclude>com.mailchannels.openapitools:*</exclude>
                                     </excludes>
                                 </requireReleaseDeps>
                             </rules>

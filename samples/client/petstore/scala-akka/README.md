@@ -36,7 +36,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>scala-akka-petstore-client</artifactId>
   <version>1.0.0</version>
   <scope>compile</scope>
@@ -75,7 +75,7 @@ object PetApiExample extends App {
 
     implicit val system: ActorSystem = ActorSystem()
     import system.dispatcher
-    
+
     // Create invoker to execute requests
     val apiInvoker = ApiInvoker()
     val apiInstance = PetApi("http://petstore.swagger.io/v2")
@@ -157,7 +157,7 @@ Authentication schemes defined for the API:
 
 - **Type**: API key
 - **API key parameter name**: AUTH_KEY
-- **Location**: 
+- **Location**:
 
 
 ## Author

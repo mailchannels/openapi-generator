@@ -26,7 +26,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>petstore-android-volley</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
@@ -130,7 +130,7 @@ Authentication schemes defined for the API:
 - **Type**: OAuth
 - **Flow**: implicit
 - **Authorization URL**: http://petstore.swagger.io/api/oauth/dialog
-- **Scopes**: 
+- **Scopes**:
   - write:pets: modify pets in your account
   - read:pets: read your pets
 

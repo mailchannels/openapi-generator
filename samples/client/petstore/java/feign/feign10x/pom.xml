@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>petstore-feign-10x</artifactId>
     <packaging>jar</packaging>
     <name>petstore-feign-10x</name>
@@ -218,7 +218,7 @@
             <artifactId>jsr305</artifactId>
             <version>3.0.2</version>
         </dependency>
-        
+
         <!-- HTTP client: Netflix Feign -->
         <dependency>
             <groupId>io.github.openfeign</groupId>
@@ -258,7 +258,7 @@
             <version>${jackson-databind-version}</version>
         </dependency>
         <dependency>
-            <groupId>org.openapitools</groupId>
+            <groupId>com.mailchannels.openapitools</groupId>
             <artifactId>jackson-databind-nullable</artifactId>
             <version>${jackson-databind-nullable-version}</version>
         </dependency>

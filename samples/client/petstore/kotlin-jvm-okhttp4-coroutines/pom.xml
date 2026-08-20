@@ -1,6 +1,6 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>kotlin-petstore-okhttp4-coroutines-client</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>

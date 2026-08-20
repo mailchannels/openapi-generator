@@ -1,6 +1,6 @@
 # petstore-webclient-nullable-arrays
 
-Minimal Example 
+Minimal Example
 
 - API version: v1
 
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>petstore-webclient-nullable-arrays</artifactId>
   <version>v1</version>
   <scope>compile</scope>
@@ -89,7 +89,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
         defaultClient.setBasePath("http://localhost");
-        
+
         DefaultApi apiInstance = new DefaultApi(defaultClient);
         try {
             List<ByteArrayObject> result = apiInstance.nullableArrayTestGet();
@@ -112,7 +112,7 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**nullableArrayTestGet**](docs/DefaultApi.md#nullableArrayTestGet) | **GET** /nullable-array-test | 
+*DefaultApi* | [**nullableArrayTestGet**](docs/DefaultApi.md#nullableArrayTestGet) | **GET** /nullable-array-test |
 
 
 ## Documentation for Models

@@ -231,9 +231,13 @@ public class ExampleGenerator {
         } else if (ModelUtils.isArraySchema(property)) {
             Schema innerType = ((ArraySchema) property).getItems();
             if (innerType != null) {
-                int arrayLength = null == ((ArraySchema) property).getMaxItems() ? 2 : ((ArraySchema) property).getMaxItems();
-                // avoid memory issues by limiting to max. 5 items
-                arrayLength = Math.min(arrayLength, 5);
+                // if minItems is specified and greater than one, display minItems items in the array
+                // example. otherwise display one item
+                Integer minItems = ((ArraySchema) property).getMinItems();
+                int arrayLength = 1;
+                if (minItems != null) {
+                    arrayLength = Math.max(minItems, 1);
+                }
                 Object[] objectProperties = new Object[arrayLength];
                 Object objProperty = resolvePropertyToExample(propertyName, mediaType, innerType, processedModels);
                 for (int i = 0; i < arrayLength; i++) {

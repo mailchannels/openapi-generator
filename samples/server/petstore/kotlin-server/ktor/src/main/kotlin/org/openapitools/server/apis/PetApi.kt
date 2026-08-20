@@ -50,7 +50,7 @@ fun Route.PetApi() {
         
         val exampleContentType = "application/json"
             val exampleContentString = """{
-              "photoUrls" : [ "photoUrls", "photoUrls" ],
+              "photoUrls" : [ "photoUrls" ],
               "name" : "doggie",
               "id" : 0,
               "category" : {
@@ -58,9 +58,6 @@ fun Route.PetApi() {
                 "id" : 6
               },
               "tags" : [ {
-                "name" : "name",
-                "id" : 1
-              }, {
                 "name" : "name",
                 "id" : 1
               } ],
@@ -81,7 +78,7 @@ fun Route.PetApi() {
         
         val exampleContentType = "application/json"
             val exampleContentString = """{
-              "photoUrls" : [ "photoUrls", "photoUrls" ],
+              "photoUrls" : [ "photoUrls" ],
               "name" : "doggie",
               "id" : 0,
               "category" : {
@@ -89,9 +86,6 @@ fun Route.PetApi() {
                 "id" : 6
               },
               "tags" : [ {
-                "name" : "name",
-                "id" : 1
-              }, {
                 "name" : "name",
                 "id" : 1
               } ],
@@ -112,7 +106,7 @@ fun Route.PetApi() {
         
         val exampleContentType = "application/json"
             val exampleContentString = """{
-              "photoUrls" : [ "photoUrls", "photoUrls" ],
+              "photoUrls" : [ "photoUrls" ],
               "name" : "doggie",
               "id" : 0,
               "category" : {
@@ -120,9 +114,6 @@ fun Route.PetApi() {
                 "id" : 6
               },
               "tags" : [ {
-                "name" : "name",
-                "id" : 1
-              }, {
                 "name" : "name",
                 "id" : 1
               } ],

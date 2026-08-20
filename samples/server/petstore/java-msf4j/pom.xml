@@ -5,7 +5,7 @@
     <version>2.6.4</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>java-msf4j-server</artifactId>
   <packaging>jar</packaging>
   <name>java-msf4j-server</name>

@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>petstore-openapi3-jersey2-java8-special-characters</artifactId>
   <version>1.0.0</version>
   <scope>compile</scope>
@@ -114,9 +114,9 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
         defaultClient.setBasePath("http://localhost");
-        
+
         DefaultApi apiInstance = new DefaultApi(defaultClient);
-        MySchemaNameCharacters mySchemaNameCharacters = new MySchemaNameCharacters(); // MySchemaNameCharacters | 
+        MySchemaNameCharacters mySchemaNameCharacters = new MySchemaNameCharacters(); // MySchemaNameCharacters |
         try {
             MySchemaNameCharacters result = apiInstance.testPost(mySchemaNameCharacters);
             System.out.println(result);
@@ -138,7 +138,7 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**testPost**](docs/DefaultApi.md#testPost) | **POST** /test | 
+*DefaultApi* | [**testPost**](docs/DefaultApi.md#testPost) | **POST** /test |
 
 
 ## Documentation for Models

@@ -563,7 +563,6 @@ components:
       example:
         objectArray:
         - null
-        - null
       properties:
         objectArray:
           items:

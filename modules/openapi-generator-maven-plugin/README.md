@@ -9,7 +9,7 @@ Usage
 Add to your `build->plugins` section (default phase is `generate-sources` phase)
 ```xml
 <plugin>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-maven-plugin</artifactId>
     <!-- RELEASE_VERSION -->
     <version>6.0.0</version>
@@ -144,7 +144,7 @@ Specifying a custom generator is a bit different. It doesn't support the classpa
 
 ```xml
 <plugin>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-maven-plugin</artifactId>
     <version>${openapi-generator-maven-plugin-version}</version>
     <executions>

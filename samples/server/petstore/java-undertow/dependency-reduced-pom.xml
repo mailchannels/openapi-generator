@@ -7,7 +7,7 @@
     <relativePath>../pom.xml/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.mailchannels.openapitools</groupId>
   <artifactId>openapi-undertow-server</artifactId>
   <name>openapi-undertow-server</name>
   <version>1.0.0</version>

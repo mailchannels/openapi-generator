@@ -13,7 +13,7 @@ Add to your `build->plugins` section (default phase is `generate-sources` phase)
 
 ```xml
 <plugin>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>openapi-generator-maven-plugin</artifactId>
     <!-- RELEASE_VERSION -->
     <version>6.0.0</version>
@@ -91,7 +91,7 @@ This gives access to the following tasks:
 | ---- | ----------- |
 | openApiGenerate | Generate code via Open API Tools Generator for Open API 2.0 or 3.x specification documents. |
 | openApiGenerators | Lists generators available via Open API Generators. |
-| openApiMeta  | Generates a new generator to be consumed via Open API Generator. | 
+| openApiMeta  | Generates a new generator to be consumed via Open API Generator. |
 | openApiValidate  | Validates an Open API 2.0 or 3.x specification document. |
 
 > The plugin implements the above tasks as project extensions of the same name. If you’d like to declare these tasks as dependencies to other tasks (using `dependsOn`), you’ll need a task reference. e.g.:

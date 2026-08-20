@@ -690,20 +690,6 @@ components:
         deepSliceModel:
         - - - name: name
               id: 1
-            - name: name
-              id: 1
-          - - name: name
-              id: 1
-            - name: name
-              id: 1
-        - - - name: name
-              id: 1
-            - name: name
-              id: 1
-          - - name: name
-              id: 1
-            - name: name
-              id: 1
         id: 0
         deepSliceMap:
         - - tag:
@@ -712,125 +698,12 @@ components:
             Pet:
             - photoUrls:
               - photoUrls
-              - photoUrls
               name: doggie
               id: 0
               category:
                 name: name
                 id: 6
               tags:
-              - name: name
-                id: 1
-              - name: name
-                id: 1
-              status: available
-            - photoUrls:
-              - photoUrls
-              - photoUrls
-              name: doggie
-              id: 0
-              category:
-                name: name
-                id: 6
-              tags:
-              - name: name
-                id: 1
-              - name: name
-                id: 1
-              status: available
-          - tag:
-              name: name
-              id: 1
-            Pet:
-            - photoUrls:
-              - photoUrls
-              - photoUrls
-              name: doggie
-              id: 0
-              category:
-                name: name
-                id: 6
-              tags:
-              - name: name
-                id: 1
-              - name: name
-                id: 1
-              status: available
-            - photoUrls:
-              - photoUrls
-              - photoUrls
-              name: doggie
-              id: 0
-              category:
-                name: name
-                id: 6
-              tags:
-              - name: name
-                id: 1
-              - name: name
-                id: 1
-              status: available
-        - - tag:
-              name: name
-              id: 1
-            Pet:
-            - photoUrls:
-              - photoUrls
-              - photoUrls
-              name: doggie
-              id: 0
-              category:
-                name: name
-                id: 6
-              tags:
-              - name: name
-                id: 1
-              - name: name
-                id: 1
-              status: available
-            - photoUrls:
-              - photoUrls
-              - photoUrls
-              name: doggie
-              id: 0
-              category:
-                name: name
-                id: 6
-              tags:
-              - name: name
-                id: 1
-              - name: name
-                id: 1
-              status: available
-          - tag:
-              name: name
-              id: 1
-            Pet:
-            - photoUrls:
-              - photoUrls
-              - photoUrls
-              name: doggie
-              id: 0
-              category:
-                name: name
-                id: 6
-              tags:
-              - name: name
-                id: 1
-              - name: name
-                id: 1
-              status: available
-            - photoUrls:
-              - photoUrls
-              - photoUrls
-              name: doggie
-              id: 0
-              category:
-                name: name
-                id: 6
-              tags:
-              - name: name
-                id: 1
               - name: name
                 id: 1
               status: available
@@ -903,15 +776,12 @@ components:
       example:
         photoUrls:
         - photoUrls
-        - photoUrls
         name: doggie
         id: 0
         category:
           name: name
           id: 6
         tags:
-        - name: name
-          id: 1
         - name: name
           id: 1
         status: available
@@ -998,29 +868,12 @@ components:
         Pet:
         - photoUrls:
           - photoUrls
-          - photoUrls
           name: doggie
           id: 0
           category:
             name: name
             id: 6
           tags:
-          - name: name
-            id: 1
-          - name: name
-            id: 1
-          status: available
-        - photoUrls:
-          - photoUrls
-          - photoUrls
-          name: doggie
-          id: 0
-          category:
-            name: name
-            id: 6
-          tags:
-          - name: name
-            id: 1
           - name: name
             id: 1
           status: available

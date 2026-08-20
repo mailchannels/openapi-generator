@@ -26,7 +26,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.mailchannels.openapitools</groupId>
     <artifactId>spring-cloud-spring-pageable</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>

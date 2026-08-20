@@ -340,6 +340,16 @@ public class JavaClientCodegenTest {
         TestUtils.ensureContainsFile(files, output, "src/main/java/xyz/abcdef/StringUtil.java");
         TestUtils.ensureContainsFile(files, output, "src/test/java/xyz/abcdef/api/DefaultApiTest.java");
 
+        Path pom = output.toPath().resolve("pom.xml");
+        TestUtils.assertFileContains(
+                pom,
+                "<groupId>org.openapitools</groupId>\n"
+                        + "            <artifactId>jackson-databind-nullable</artifactId>");
+        TestUtils.assertFileNotContains(
+                pom,
+                "<groupId>com.mailchannels.openapitools</groupId>\n"
+                        + "            <artifactId>jackson-databind-nullable</artifactId>");
+
         validateJavaSourceFiles(files);
 
         TestUtils.assertFileContains(Paths.get(output + "/src/main/java/xyz/abcdef/api/DefaultApi.java"), "public class DefaultApi");

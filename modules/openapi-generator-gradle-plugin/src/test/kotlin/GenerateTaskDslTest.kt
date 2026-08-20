@@ -13,7 +13,7 @@ class GenerateTaskDslTest : TestBase() {
 
     private val defaultBuildGradle = """
         plugins {
-          id 'org.openapi.generator'
+          id 'com.mailchannels.gradle.openapi-generator'
         }
         openApiGenerate {
             generatorName = "kotlin"
@@ -76,7 +76,7 @@ class GenerateTaskDslTest : TestBase() {
         )
         withProject("""
         plugins {
-          id 'org.openapi.generator'
+          id 'com.mailchannels.gradle.openapi-generator'
         }
         openApiGenerate {
             generatorName = "java"
@@ -212,7 +212,7 @@ class GenerateTaskDslTest : TestBase() {
 
         withProject("""
         plugins {
-          id 'org.openapi.generator'
+          id 'com.mailchannels.gradle.openapi-generator'
         }
         openApiGenerate {
             generatorName = "kotlin"
@@ -250,7 +250,7 @@ class GenerateTaskDslTest : TestBase() {
 
         withProject("""
         plugins {
-          id 'org.openapi.generator'
+          id 'com.mailchannels.gradle.openapi-generator'
         }
         openApiGenerate {
             generatorName = "kotlin"
@@ -287,7 +287,7 @@ class GenerateTaskDslTest : TestBase() {
 
         withProject("""
         plugins {
-          id 'org.openapi.generator'
+          id 'com.mailchannels.gradle.openapi-generator'
         }
         openApiGenerate {
             generatorName = "kotlin"
